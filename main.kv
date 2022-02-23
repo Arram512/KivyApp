@@ -16,17 +16,18 @@
 		font_size: 20
 		halign: 'center'
 
+
+
 <LessonsHomeWidget>:
 	cols: 1
-	height: app.window
 	size_hint_y: None
 	height: self.minimum_height
 	spacing: 20
+	
 
 
 <LessonsMoreWidget>:
 	cols: 1
-    height: app.window
     size_hint_y: None
 	height: self.minimum_height
     spacing: 0
@@ -54,7 +55,6 @@
 <TestsHomeWidget>:
 	
 	cols: 1
-	height: app.window
 	size_hint_y: None
 	height: self.minimum_height
 	spacing: 20
@@ -161,6 +161,14 @@
 
 							LessonsHomeWidget: 					#Lessons home widget
 								id: lessons_home_widget
+
+								BoxLayout:
+									orientation: 'vertical'
+									id: lessons_home_widget_anchor
+									size_hint_y: None
+									height: app.window
+
+
 
 					Screen:  								#Lessons second screen
 

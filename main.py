@@ -200,11 +200,11 @@ class MainApp(MDApp, FirstLevelCallBacks):
 		self.sources = ReciveFromDatabase().get_sources("Intro")
 		self.items = ReciveFromDatabase().get_items("Intro")
 
-		lesson_1_button = MDRectangleFlatIconButton(text = f'Lesson 1', icon = '', size_hint = (1, 1), font_size = 40)
+		lesson_1_button = MDRectangleFlatIconButton(text = f'Lesson 1', icon = '', size_hint = (1, .1))
 		lesson_1_button.bind(on_press = partial(self.lesson_callback, lesson_sources =  self.sources, lesson_items = self.items))
-		self.root.ids.lessons_home_widget.add_widget(lesson_1_button)
+		self.root.ids.lessons_home_widget_anchor.add_widget(lesson_1_button)
 
-		test_1_button = MDRectangleFlatIconButton(text = 'Test 1', icon = '' ,size_hint = (1, 1), font_size = 40)
+		test_1_button = MDRectangleFlatIconButton(text = 'Test 1', icon = '' , font_size = 40)
 		test_1_button.bind(on_press = partial(self.test_callback, lesson_sources = self.sources, lesson_items = self.items))
 		self.root.ids.tests_home_widget.add_widget(test_1_button)
 
@@ -214,33 +214,36 @@ class MainApp(MDApp, FirstLevelCallBacks):
 		self.sources = ReciveFromDatabase().get_sources("Alphavite")
 		self.items = ReciveFromDatabase().get_items("Alphavite")
 
-		lesson_2_button = MDRectangleFlatIconButton(text = f'Lesson 2', icon = '', size_hint = (1, 1), font_size = 40)
+		lesson_2_button = MDRectangleFlatIconButton(text = f'Lesson 2', icon = '', size_hint = (1, .1))
 		lesson_2_button.bind(on_press = partial(self.lesson_callback, lesson_sources =  self.sources, lesson_items = self.items))
-		self.root.ids.lessons_home_widget.add_widget(lesson_2_button)
+		self.root.ids.lessons_home_widget_anchor.add_widget(lesson_2_button)
 
 		test_2_button = MDRectangleFlatIconButton(text = 'Test 2', icon = '', size_hint = (1, 1), font_size = 40)
 		test_2_button.bind(on_press = partial(self.test_callback, lesson_sources = self.sources, lesson_items = self.items))
 		self.root.ids.tests_home_widget.add_widget(test_2_button)
 
-		# lesson_3_button = MDRectangleFlatIconButton(text = f'Lesson 3', size_hint = (1, 1), font_size = 40)
+		# lesson_3_button = MDRectangleFlatIconButton(text = f'Lesson 3', size_hint = (1, .1))
 		# lesson_3_button.bind(on_press = partial(self.lesson_callback, lesson_sources =  self.sources[4:], lesson_items = self.items[4:]))
-		# self.root.ids.lessons_home_widget.add_widget(lesson_3_button)
+		# self.root.ids.lessons_home_widget_anchor.add_widget(lesson_3_button)
 
-		# lesson_4_button = MDRectangleFlatIconButton(text = f'Lesson 4', size_hint = (1, 1), font_size = 40)
+		# lesson_4_button = MDRectangleFlatIconButton(text = f'Lesson 4', size_hint = (1, .1))
 		# lesson_4_button.bind(on_press = partial(self.lesson_callback, lesson_sources =  self.sources[4:], lesson_items = self.items[4:]))
-		# self.root.ids.lessons_home_widget.add_widget(lesson_4_button)
+		# self.root.ids.lessons_home_widget_anchor.add_widget(lesson_4_button)
 
-		# lesson_5_button = MDRectangleFlatIconButton(text = f'Lesson 5',size_hint = (1, 1), font_size = 40)
+		# lesson_5_button = MDRectangleFlatIconButton(text = f'Lesson 5',size_hint = (1, .1))
 		# lesson_5_button.bind(on_press = partial(self.lesson_callback, lesson_sources =  self.sources[4:], lesson_items = self.items[4:]))
-		# self.root.ids.lessons_home_widget.add_widget(lesson_5_button)
+		# self.root.ids.lessons_home_widget_anchor.add_widget(lesson_5_button)
 
-		# lesson_6_button = MDRectangleFlatIconButton(text = f'Lesson 6', size_hint = (1, 1), font_size = 40)
+		# lesson_6_button = MDRectangleFlatIconButton(text = f'Lesson 6', size_hint = (1, .1))
 		# lesson_6_button.bind(on_press = partial(self.lesson_callback, lesson_sources =  self.sources[4:], lesson_items = self.items[4:]))
-		# self.root.ids.lessons_home_widget.add_widget(lesson_6_button)
+		# self.root.ids.lessons_home_widget_anchor.add_widget(lesson_6_button)
 
-		# lesson_7_button = MDRectangleFlatIconButton(text = f'Lesson 7', size_hint = (1, 1), font_size = 40)
+		# lesson_7_button = MDRectangleFlatIconButton(text = f'Lesson 7', size_hint = (1, .1))
 		# lesson_7_button.bind(on_press = partial(self.lesson_callback, lesson_sources =  self.sources[4:], lesson_items = self.items[4:]))
-		# self.root.ids.lessons_home_widget.add_widget(lesson_7_button)
+		# self.root.ids.lessons_home_widget_anchor.add_widget(lesson_7_button)
+
+
+		
 
 
 
